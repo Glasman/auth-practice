@@ -8,8 +8,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/login', (req, res) => {
-    console.log('logging in')
-    res.send('Logging in')
+    console.log('checking if user is in DB')
+    res.send({value: 'Logging in'})
 })
 
 const PORT = 3000;

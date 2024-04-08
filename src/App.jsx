@@ -8,7 +8,9 @@ const App = () => {
   const login = async(event) => {
     event.preventDefault();
     try {
-      await fetch('/login')
+      const response = await fetch('/login')
+      const responseJson = await response.json();
+      console.log(responseJson)
     } catch(err) {
       console.log(err)
     }
