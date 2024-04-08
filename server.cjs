@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 
 app.get('/login', (req, res) => {
     console.log('logging in')
-    res.send('logging in')
+    res.send('Logging in')
 })
 
 const PORT = 3000;
