@@ -5,10 +5,10 @@ const App = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState();
 
-  const logIn = async(event) => {
+  const login = async(event) => {
     event.preventDefault();
     try {
-      await fetch('/logIn')
+      await fetch('/login')
     } catch(err) {
       console.log(err)
     }
@@ -17,7 +17,7 @@ const App = () => {
   return (
     <>
       <h1>Auth practice!</h1>
-      <form onSubmit={logIn}>
+      <form onSubmit={login}>
         <label>
           Username:
           <input

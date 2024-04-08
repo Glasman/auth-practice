@@ -7,5 +7,10 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + `/dist/index.html`);
 })
 
+app.get('/login', (req, res) => {
+    console.log('logging in')
+    res.send('logging in')
+})
+
 const PORT = 3000;
-app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`)) 
